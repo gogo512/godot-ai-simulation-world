@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "providers": {
+    "moonshot": {
+      "base_url": "https://api.moonshot.cn/v1",
+      "models": ["kimi-k2.5", "kimi-k1.5"],
+      "default_model": "kimi-k2.5",
+      "max_tokens": 1024,
+      "temperature": 0.8
+    },
+    "openai": {
+      "base_url": "https://api.openai.com/v1",
+      "models": ["gpt-4", "gpt-3.5-turbo"],
+      "default_model": "gpt-3.5-turbo",
+      "max_tokens": 1024,
+      "temperature": 0.8
+    },
+    "local": {
+      "base_url": "http://localhost:11434/v1",
+      "models": ["llama2", "mistral"],
+      "default_model": "llama2",
+      "max_tokens": 512,
+      "temperature": 0.7
+    }
+  },
+  "npc_templates": {
+    "friendly": {
+      "greeting": ["Hello!", "Hi there!", "Nice to meet you!"],
+      "personality": "friendly and helpful",
+      "speech_style": "warm and welcoming"
+    },
+    "grumpy": {
+      "greeting": ["What do you want?", "Make it quick.", "Hmph."],
+      "personality": "grumpy but wise",
+      "speech_style": "terse and direct"
+    },
+    "curious": {
+      "greeting": ["Oh, hello!", "What's this?", "Tell me more!"],
+      "personality": "curious and energetic",
+      "speech_style": "enthusiastic and inquisitive"
+    }
+  }
+}
